@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerAI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+
+    <div class="dashboard-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+                <div class="logo-icon">✦</div>
+                <div>
+                    <h2>CareerAI</h2>
+                    <span>AI Career Platform</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+
+                <!-- Main -->
+                <div class="nav-group">
+
+                    <div class="nav-title">MAIN</div>
+
+                    <a href="#careerOverview" class="nav-item active">
+                        <span>🏠</span>
+                        <span>Dashboard</span>
+                    </a>
+
+                </div>
+
+
+                <!-- Career Tools -->
+                <div class="nav-group">
+
+                    <div class="nav-title">CAREER TOOLS</div>
+
+                    <a href="#resumeSection" class="nav-item">
+                        <span>📄</span>
+                        <span>Resume</span>
+                    </a>
+
+                    <a href="#skillGapAnalysis" class="nav-item">
+                        <span>🧠</span>
+                        <span>Skills</span>
+                    </a>
+
+                    <a href="#careerRoadmap" class="nav-item">
+                        <span>🗺️</span>
+                        <span>Roadmap</span>
+                    </a>
+
+                    <a href="#jobRecommendations" class="nav-item">
+                        <span>🔎</span>
+                        <span>Job Recommendations</span>
+                    </a>
+
+                    <a href="#resumeImprovement" class="nav-item">
+                        <span>📝</span>
+                        <span>Resume Improvement</span>
+                    </a>
+
+                </div>
+
+
+                <!-- Interview -->
+                <div class="nav-group">
+
+                    <div class="nav-title">INTERVIEW</div>
+
+                    <a href="#interviewSection"
+                        class="nav-item"
+                        onclick="document.getElementById('interviewSection').scrollIntoView({ behavior: 'smooth' }); return false;">
+                        <span>🎤</span>
+                        <span>Interview</span>
+                    </a>
+
+                </div>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="ai-status">
+                    <span class="status-dot"></span>
+                    <div>
+                        <strong>AI System</strong>
+                        <small>Online</small>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- Main Dashboard -->
+        <main class="main-content">
+
+        <header class="dashboard-header">
+
+            <div class="header-content">
+
+                <div>
+                    <p class="welcome-text">Good morning, Ganesh 👋</p>
+
+                    <h1>Welcome back to CareerAI</h1>
+
+                    <p class="header-description">
+                        Track your career progress and improve your job readiness.
+                    </p>
+                </div>
+
+                <div class="header-status">
+                    <span class="status-dot"></span>
+
+                    <div>
+                        <strong>AI System</strong>
+                        <small>Online & Ready</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+        <!-- Career Overview -->
+        <section id="careerOverview" class="overview-section">
+
+            <div class="overview-heading">
+                <div>
+                    <h2>Career Overview</h2>
+                    <p>Your AI-powered career readiness dashboard</p>
+                </div>
+
+                <span class="status-badge">● AI Ready</span>
+            </div>
+
+            <div class="overview-grid">
+
+                <div class="overview-card">
+                    <div class="overview-icon">📄</div>
+                    <div>
+                        <p>Resume Score</p>
+                        <h3 id="overviewResumeScore">--</h3>
+                    </div>
+                </div>
+
+                <div class="overview-card">
+                    <div class="overview-icon">🎯</div>
+                    <div>
+                        <p>Job Match</p>
+                        <h3 id="overviewJobMatch">--</h3>
+                    </div>
+                </div>
+
+                <div class="overview-card">
+                    <div class="overview-icon">🎤</div>
+                    <div>
+                        <p>Interview Progress</p>
+                        <h3 id="overviewInterviewProgress">0%</h3>
+                    </div>
+                </div>
+
+                <div class="overview-card">
+                    <div class="overview-icon">💻</div>
+                    <div>
+                        <p>Skills Detected</p>
+                        <h3 id="overviewSkills">0</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- AI Career Insights -->
+        <section id="aiInsights" class="insights-section">
+
+            <div class="insights-heading">
+                <div>
+                    <h2>✨ AI Career Insights</h2>
+                    <p>Personalised insights based on your career analysis</p>
+                </div>
+
+                <span class="ai-badge">AI Powered</span>
+            </div>
+
+            <div class="insights-grid">
+
+                <div class="insight-card strength-card">
+                    <div class="insight-icon">💪</div>
+                    <div>
+                        <span class="insight-label">YOUR STRENGTH</span>
+                        <h3>Strong Technical Foundation</h3>
+                        <p>
+                            Your resume shows a good foundation in
+                            programming and web development.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="insight-card gap-card">
+                    <div class="insight-icon">⚠️</div>
+                    <div>
+                        <span class="insight-label">SKILL GAP</span>
+                        <h3>Improve Job-Relevant Skills</h3>
+                        <p>
+                            Focus on the skills missing from your
+                            target job description.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="insight-card action-card">
+                    <div class="insight-icon">🚀</div>
+                    <div>
+                        <span class="insight-label">NEXT STEP</span>
+                        <h3>Build & Practise</h3>
+                        <p>
+                            Build practical projects and practise
+                            technical interview questions.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Career Readiness -->
+        <section id="careerReadiness" class="readiness-section">
+
+            <div class="readiness-heading">
+                <div>
+                    <h2>📈 Career Readiness</h2>
+                    <p>Your overall preparation score based on your CareerAI analysis</p>
+                </div>
+            </div>
+
+            <div class="readiness-content">
+
+                <div class="readiness-score">
+                    <div class="score-circle">
+                        <span id="careerReadinessScore">--</span>
+                        <small>/100</small>
+                    </div>
+
+                    <h3 id="careerReadinessLevel">Waiting for analysis</h3>
+                    <p>Complete your analysis to calculate your readiness.</p>
+                </div>
+
+                <div class="readiness-breakdown">
+
+                    <div class="readiness-item">
+                        <div>
+                            <span>Resume</span>
+                            <strong id="readinessResume">--</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div id="readinessResumeBar" class="progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="readiness-item">
+                        <div>
+                            <span>Job Match</span>
+                            <strong id="readinessJobMatch">--</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div id="readinessJobMatchBar" class="progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="readiness-item">
+                        <div>
+                            <span>Interview</span>
+                            <strong id="readinessInterview">--</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div id="readinessInterviewBar" class="progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="readiness-item">
+                        <div>
+                            <span>Skills</span>
+                            <strong id="readinessSkills">--</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div id="readinessSkillsBar" class="progress-fill"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Resume Analysis -->
+        <section id="resumeSection" class="upload-section">
+
+            <h2>Resume Analysis</h2>
+
+            <p>Upload your PDF resume and let AI analyse your career profile.</p>
+
+            <input type="file" id="resumeFile" accept=".pdf">
+
+            <button id="uploadButton">
+                Analyse Resume
+            </button>
+
+            <hr>
+
+            <!-- Job Description -->
+            <h2>Job Description</h2>
+
+            <p>
+                Paste the job description you want to compare with your resume.
+            </p>
+
+            <textarea
+                id="jobDescription"
+                placeholder="Paste job description here..."
+                rows="10">
+            </textarea>
+
+            <br>
+
+            <button id="jobMatchButton">
+                Analyse Job Match
+            </button>
+
+            <div id="jobResult"></div>
+
+        </section>
+
+
+        <!-- Loading -->
+        <div id="loading">
+            Analysing your resume with AI...
+        </div>
+
+
+        <!-- Resume Analysis Result -->
+        <section id="result" class="result-section"></section>
+
+
+        <!-- Interview Intelligence -->
+        <section id="interviewSection" class="interview-dashboard-section">
+
+            <div class="interview-header">
+
+                <div>
+                    <span class="section-eyebrow">
+                        AI INTERVIEW INTELLIGENCE
+                    </span>
+
+                    <h2>Interview Intelligence</h2>
+
+                    <p>
+                        Generate AI-powered interview questions based on
+                        your resume and target job description.
+                    </p>
+                </div>
+
+                <div class="analysis-status">
+                    <span class="status-dot"></span>
+                    AI Ready
+                </div>
+
+            </div>
+
+
+            <div class="interview-action-panel">
+
+                <div class="interview-action-icon">
+                    🎤
+                </div>
+
+                <div class="interview-action-content">
+
+                    <h3>Generate Your Interview</h3>
+
+                    <p>
+                        Get technical, HR and project-based questions
+                        tailored to your career profile.
+                    </p>
+
+                    <button
+                        id="generateInterviewButton"
+                        class="generate-interview-btn"
+                    >
+                        ✨ Generate Interview Questions
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div id="interviewResult"></div>
+
+        </section>
+
+
+        <!-- Interview Answer Evaluation -->
+
+        <section id="answerEvaluation" class="interview-evaluation-section">
+
+            <div class="evaluation-header">
+
+                <div>
+                    <span class="section-eyebrow">
+                        AI ANSWER EVALUATION
+                    </span>
+
+                    <h2>Interview Answer Evaluation</h2>
+
+                    <p>
+                        Submit your answer and let CareerAI evaluate your
+                        interview performance using AI.
+                    </p>
+                </div>
+
+                <div class="evaluation-badge">
+                    🧠 AI Evaluator
+                </div>
+
+            </div>
+
+
+            <div class="evaluation-panel">
+
+                <div class="evaluation-field">
+
+                    <label for="questionSelect">
+                        Select Interview Question
+                    </label>
+
+                    <select id="questionSelect">
+                        <option value="">
+                            Generate interview questions first
+                        </option>
+                    </select>
+
+                </div>
+
+
+                <div class="evaluation-field">
+
+                    <label for="answerInput">
+                        Your Answer
+                    </label>
+
+                    <textarea
+                        id="answerInput"
+                        rows="8"
+                        placeholder="Type your interview answer here..."
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    id="evaluateAnswerButton"
+                    class="evaluate-answer-btn"
+                >
+                    ✨ Evaluate My Answer
+                </button>
+
+            </div>
+
+
+            <div id="evaluationResult"></div>
+        </section>
+            <!-- Interview Progress -->
+            <section id="interviewProgress" class="interview-section">
+
+                <h2>📈 Interview Progress</h2>
+
+                <div id="progressResult">
+
+                    <p>Answer questions to start tracking your progress.</p>
+
+                </div>
+
+            </section>
+            <!-- Skill Gap Analysis -->
+            <section id="skillGapAnalysis" class="interview-section">
+
+                <h2>🎯 Skill Gap Analysis</h2>
+
+                <p>
+                    Identify the skills you have, the skills required by the job,
+                    and the skills you need to learn.
+                </p>
+
+                <button id="skillGapButton">
+                    Analyse Skill Gap
+                </button>
+
+                <div id="skillGapResult"></div>
+
+            </section>
+            <!-- AI Career Roadmap -->
+            <section id="careerRoadmap" class="interview-section">
+
+                <h2>🗺️ AI Career Roadmap</h2>
+
+                <p>
+                    Generate a personalised career roadmap based on your
+                    resume and target job.
+                </p>
+
+                <button id="careerRoadmapButton">
+                    Generate Career Roadmap
+                </button>
+
+                <div id="careerRoadmapResult"></div>
+
+            </section>
+            <!-- AI Job Recommendations -->
+            <section id="jobRecommendations" class="interview-section">
+
+                <h2>🔎 AI Job Recommendations</h2>
+
+                <p>
+                    Get suitable job roles based on your resume,
+                    skills, and target job.
+                </p>
+
+                <button id="jobRecommendationsButton">
+                    Find Recommended Jobs
+                </button>
+
+                <div id="jobRecommendationsResult"></div>
+
+            </section>
+            <!-- Resume Improvement -->
+            <section id="resumeImprovement" class="interview-section">
+
+                <h2>📝 Resume Improvement</h2>
+
+                <p>
+                    Get AI-powered suggestions to improve your resume
+                    and increase your chances of getting shortlisted.
+                </p>
+
+                <button id="resumeImprovementButton">
+                    Improve My Resume
+                </button>
+
+                <div id="resumeImprovementResult"></div>
+
+            </section>
+            <!-- Career Report -->
+            <section id="careerReport" class="interview-section">
+
+                <h2>📊 Career Report</h2>
+
+                <p>
+                    Download your CareerAI analysis and preparation report.
+                </p>
+
+                <button id="downloadReportButton">
+                    📥 Download Career Report
+                </button>
+
+            </section>
+
+        
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
