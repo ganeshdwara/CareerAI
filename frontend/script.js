@@ -30,7 +30,7 @@ uploadButton.addEventListener("click", async function () {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/upload-resume",
+            "https://careerai-api-blag.onrender.com/upload-resume",
             {
                 method: "POST",
                 body: formData
@@ -139,7 +139,7 @@ jobMatchButton.addEventListener("click", async function () {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/match-job",
+            "https://careerai-api-blag.onrender.com/match-job",
             {
                 method: "POST",
                 headers: {
@@ -708,7 +708,7 @@ generateInterviewButton.addEventListener("click", async function () {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/generate-interview",
+            "https://careerai-api-blag.onrender.com/generate-interview",
             {
                 method: "POST",
 
@@ -814,7 +814,7 @@ evaluateAnswerButton.addEventListener("click", async function () {
             document.getElementById("jobDescription").value;
 
         const response = await fetch(
-            "http://127.0.0.1:8000/evaluate-answer",
+            "https://careerai-api-blag.onrender.com/evaluate-answer",
             {
                 method: "POST",
                 headers: {
@@ -1012,7 +1012,7 @@ skillGapButton.addEventListener("click", async function () {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/skill-gap",
+            "https://careerai-api-blag.onrender.com/skill-gap",
             {
                 method: "POST",
                 headers: {
@@ -1103,7 +1103,7 @@ careerRoadmapButton.addEventListener("click", async function () {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/career-roadmap",
+            "https://careerai-api-blag.onrender.com/career-roadmap",
             {
                 method: "POST",
                 headers: {
@@ -1209,7 +1209,7 @@ jobRecommendationsButton.addEventListener("click", async function () {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/job-recommendations",
+            "https://careerai-api-blag.onrender.com/job-recommendations",
             {
                 method: "POST",
                 headers: {
@@ -1304,7 +1304,7 @@ resumeImprovementButton.addEventListener("click", async function () {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/resume-improvement",
+            "https://careerai-api-blag.onrender.com/resume-improvement",
             {
                 method: "POST",
                 headers: {
